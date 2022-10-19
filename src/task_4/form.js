@@ -130,7 +130,7 @@ const Form = () => {
     
     const handlechange = (e) => {
         if (e.target.id === "quantity") {
-            setquantity(e.target.value);
+            setquantity(Math.abs(parseInt(e.target.value)));
             set_price_total(product, e.target.value)
         }
         else {
